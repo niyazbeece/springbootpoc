@@ -1,0 +1,90 @@
+{
+	"variables": [],
+	"info": {
+		"name": "Springboot-POC",
+		"_postman_id": "4bae04a7-c459-c52a-ebab-873632971343",
+		"description": "SpringBoot POC project with REST",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "localhost:8080/topics",
+			"request": {
+				"url": "localhost:8080/topics",
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"description": "Get All saved topics"
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:8080/topics",
+			"request": {
+				"url": "localhost:8080/topics/javame",
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"id\": \"javaee\",\n    \"name\": \"java Enterprice Framework\",\n    \"description\": \"java Enterprice Framework Description\"\n}"
+				},
+				"description": "Save topic via POST"
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:8080/topics/java",
+			"request": {
+				"url": "localhost:8080/topics/java",
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"description": "Get particular topic"
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:8080/topics/java",
+			"request": {
+				"url": "localhost:8080/topics/javaee",
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {},
+				"description": "Save/update topic via PUT"
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:8080/topics/java",
+			"request": {
+				"url": "localhost:8080/topics/java",
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"id\": \"javaee\",\n    \"name\": \"java Enterprice Framework\",\n    \"description\": \"java Enterprice Framework Description\"\n}"
+				},
+				"description": "Save topic via POST"
+			},
+			"response": []
+		}
+	]
+}
