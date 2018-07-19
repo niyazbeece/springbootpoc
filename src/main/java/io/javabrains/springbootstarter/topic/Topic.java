@@ -1,8 +1,17 @@
 package io.javabrains.springbootstarter.topic;
 
+import javax.persistence.*;
+
+@Entity
+@Table(name = "spring_boot_test")
 public class Topic {
+	
+	@Id
 	private String id;
+	
+	
 	private String name;
+	
 	private String description;
 	
 	public Topic() {
